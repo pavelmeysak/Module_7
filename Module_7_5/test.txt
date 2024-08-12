@@ -1,1 +1,1 @@
-This is the test file for homework
+Это тестовый файл для проверки операторов

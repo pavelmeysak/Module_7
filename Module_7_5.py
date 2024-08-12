@@ -5,6 +5,9 @@ if os.path.exists('Module_7_5'):
 else:
     os.mkdir('Module_7_5')
     os.chdir('Module_7_5')
+file_name = 'test.txt'
+with open(file_name, 'w', encoding='utf-8') as file:
+    file.write("Это тестовый файл для проверки операторов")
 directory = os.getcwd()
 for root, dirs, files in os.walk(directory):
     for file in files:

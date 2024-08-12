@@ -1,7 +1,10 @@
 import os
 import time
-
-os.chdir('Module_7_5')
+if os.path.exists('Module_7_5'):
+    os.chdir('Module_7_5')
+else:
+    os.mkdir('Module_7_5')
+    os.chdir('Module_7_5')
 directory = os.getcwd()
 for root, dirs, files in os.walk(directory):
     for file in files:
